@@ -1,0 +1,40 @@
+/*grouping slectors*/
+h2, p {color: gray}
+
+/*universal selectors*/
+* {color: red}
+
+/*grouping declarations*/
+h1 {
+    font: 18px Arial;
+    color: purple;
+    background-color: green;
+}
+
+/*class and id selectors*/
+*.warning {
+    font-weight:bold;}
+p.warning {
+    font-weight:bold;}
+span.warning {
+    font-style: italic;}
+
+/*multiple classes*/
+.urgent {
+    font-style: italic;}
+.warning.urgent {background: silver}
+
+/*ID selectors*/
+*#lead-para {
+    font-weight:bold;}
+
+/*attribute selection*/
+a[href][title] {font-weight: bold;}
+a[href="http://www.w3.org/"][title="W3C Home"] {font-size: 200%;}
+p[class~="warning"] {font-weight: bold;}
+
+/*descendant selectors*/
+ul ol ul em {color: gray;}
+
+/*selecting children*/
+h1 > strong {color: blue;}

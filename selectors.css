@@ -36,5 +36,12 @@ p[class~="warning"] {font-weight: bold;}
 /*descendant selectors*/
 ul ol ul em {color: gray;}
 
-/*selecting children*/
+/*selecting children IE7+*/
 h1 > strong {color: blue;}
+
+/*selecting adjacent sibling elements IE7+*/
+h1 + p {margin-top: 0}
+li + li {
+    font-weight:bold;}
+
+/*pseudo-class selectors*/

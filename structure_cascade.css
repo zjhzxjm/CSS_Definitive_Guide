@@ -1,0 +1,22 @@
+/*specificity
+inline declaration: 1,0,0,0
+ID:    0,1,0,0
+class, attribute selection and pseudo-class: 0,0,1,0
+element and pseudo-element: 0,0,0,1
+combinator and universal not contribute*/
+html > body table tr[id="totals"] td ul > li {color:maroon;} /*0,0,1,7*/
+li#answer {color:navy;} /*0,1,0,1 (winner)*/
+
+h1 + p {
+    color: black;
+    font-style: italic;
+} /*0,0,0,2*/
+p {
+    color: gray;
+    background: white;
+    font-style: normal;
+} /*0,0,0,1*/
+*.aside {
+    color: black;
+    background: silver;
+} /*0,0,1,0*/

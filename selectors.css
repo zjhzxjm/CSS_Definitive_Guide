@@ -2,7 +2,7 @@
 h2, p {color: gray}
 
 /*universal selectors*/
-* {color: red}
+* {color: black}
 
 /*grouping declarations*/
 h1 {
@@ -45,3 +45,26 @@ li + li {
     font-weight:bold;}
 
 /*pseudo-class selectors*/
+a:visited {color: gray}
+a:link {color: navy}
+a.external:visited {
+    color: green;}
+a:focus {background-color: aqua}
+a:hover {color: red}
+a:active {color: yellow}
+input:focus {background: silver;
+    font-weight:bold;}
+
+/*selecting a first child IE7+*/
+p:first-child {font-weight: bold;}
+li:first-child {
+    text-transform: uppercase;}
+
+/*combining pseudo-classes*/
+a:link:hover {color:red}
+
+/*pseudo-element selectors*/
+h1:first-letter {font-size: 200%}
+p:first-line {color: coral}
+p:before {content: ">>"; color: silver}
+p:after {content: "<<"}

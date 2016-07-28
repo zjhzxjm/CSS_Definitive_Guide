@@ -6,20 +6,44 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Greetings!</h1>
 
-<p class="aside">
-    It's a fine way to start a day, don't you think? </p>
+<!--###################################################specificity###################################################-->
+<!--<h1>Greetings!</h1>-->
 
-<p>
-    There are many ways to greet a person, but the words are not as important as the act of greeting itself. </p>
+<!--<p class="aside">-->
+    <!--It's a fine way to start a day, don't you think? </p>-->
 
-<h1>Salutations!</h1>
+<!--<p>-->
+    <!--There are many ways to greet a person, but the words are not as important as the act of greeting itself. </p>-->
 
-<p>
-    There is nothing finer than a hearty welcome from one's fellow man. </p>
+<!--<h1>Salutations!</h1>-->
 
-<p class="aside">
-    Although a thick and juicy hamburger with bacon and mushrooms runs a close second. </p>
+<!--<p>-->
+    <!--There is nothing finer than a hearty welcome from one's fellow man. </p>-->
+
+<!--<p class="aside">-->
+    <!--Although a thick and juicy hamburger with bacon and mushrooms runs a close second. </p>-->
+
+
+<!--################################################importance always win##############################################-->
+<!--<h1 class="title">NightWing</h1>-->
+
+
+<!--################################################inheritance (no specificity)########################################-->
+<!--<h1 id="page-title">Meerkat <em>Central</em></h1>-->
+<!--<p>-->
+    <!--Welcome to the best palce on the web for meerkat information-->
+<!--</p>-->
+
+
+<!--#####################################################Cascade########################################################-->
+<!--==========sorting by weight and origin:Reader important > Author important > Author normal > Reader normal > User agent-->
+<!--<p style="color: black;">Well, <em>hello</em> there!</p>-->
+
+<!--==========sorting by specificity-->
+<p id="bright">Well, hello there</p>
+
+<!--==========sorting by order: same weight origin specificity then later wins out-->
+<a href="#">link address</a>
 </body>
 </html>

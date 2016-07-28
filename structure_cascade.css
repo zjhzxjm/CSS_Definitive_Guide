@@ -1,22 +1,80 @@
-/*specificity
+/*###################################################specificity###################################################
 inline declaration: 1,0,0,0
 ID:    0,1,0,0
 class, attribute selection and pseudo-class: 0,0,1,0
 element and pseudo-element: 0,0,0,1
 combinator and universal not contribute*/
-html > body table tr[id="totals"] td ul > li {color:maroon;} /*0,0,1,7*/
-li#answer {color:navy;} /*0,1,0,1 (winner)*/
+/*html > body table tr[id="totals"] td ul > li {color:maroon;} !*0,0,1,7*!*/
+/*li#answer {color:navy;} !*0,1,0,1 (winner)*!*/
 
-h1 + p {
-    color: black;
-    font-style: italic;
-} /*0,0,0,2*/
-p {
-    color: gray;
-    background: white;
-    font-style: normal;
-} /*0,0,0,1*/
-*.aside {
-    color: black;
-    background: silver;
-} /*0,0,1,0*/
+/*h1 + p {*/
+    /*color: black;*/
+    /*font-style: italic;*/
+/*} !*0,0,0,2*!*/
+/*p {*/
+    /*color: gray;*/
+    /*background: white;*/
+    /*font-style: normal;*/
+/*} !*0,0,0,1*!*/
+/**.aside {*/
+    /*color: black;*/
+    /*background: silver;*/
+/*} !*0,0,1,0*!*/
+
+
+/*################################################importance always win##############################################*/
+/*h1 {*/
+    /*font-style: italic;*/
+    /*color: gray !important;*/
+/*}*/
+/*.title {*/
+    /*color: black;*/
+    /*background: silver;*/
+/*}*/
+/** {*/
+    /*background: black !important;*/
+/*}*/
+
+
+/*################################################inheritance (no specificity)########################################*/
+/** {*/
+    /*color: gray;*/
+/*} !*0,0,0,0 > inheritance*!*/
+/*h1#page-title {*/
+    /*color: black;*/
+/*}*/
+
+
+/*#####################################################Cascade########################################################*/
+/*==========sorting by weight and origin:Reader important > Author important > Author normal > Reader normal > User agent*/
+/*p {*/
+    /*color: gray !important;*/
+/*}*/
+
+/*==========sorting by specificity*/
+/*p#bright {*/
+    /*color: silver;*/
+/*}*/
+/*p {*/
+    /*color: black;*/
+/*}*/
+
+/*==========sorting by order: same weight origin specificity then later wins out*/
+/*a:link {*/
+    /*color: blue;*/
+/*}*/
+/*a:visited {*/
+    /*color: purple;*/
+/*}*/
+/*a:link:hover {*/
+    /*color: red;*/
+/*}*/
+/*a:visited:hover {*/
+    /*color: gray;*/
+/*}*/
+/*a:link:active {*/
+    /*color: orange;*/
+/*}*/
+/*a:visited:active {*/
+    /*color: silver;*/
+/*}*/

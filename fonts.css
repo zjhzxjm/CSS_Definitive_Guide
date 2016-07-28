@@ -1,0 +1,142 @@
+/*###################################################font family#########################################################*/
+/*==========specifying a font family*/
+/*h1 {*/
+    /*font-family:Arial, sans-serif;*/
+/*}*/
+
+
+/*###################################################font weight#####################################################*/
+/*p {*/
+    /*font-weight:normal;*/
+/*}*/
+/*==========getting bolder*/
+/*p {*/
+    /*font-weight:100;*/
+/*}*/
+/*p span {*/
+    /*font-weight:400;*/
+/*}*/
+/*strong {*/
+    /*font-weight:bolder;*/
+/*}*/
+/*strong b {*/
+    /*font-weight:bolder;*/
+/*}*/
+/*==========lightening weights*/
+/*p {*/
+    /*font-weight:900;*/
+/*}*/
+/*p span {*/
+    /*font-weight:700;*/
+/*}*/
+/*strong {*/
+    /*font-weight:lighter;*/
+/*}*/
+/*b {*/
+    /*font-weight:lighter;*/
+/*}*/
+
+
+/*###################################################font size  #####################################################*/
+/*==========absolute sizes*/
+/*p.one {*/
+    /*font-size:xx-small;*/
+/*}*/
+/*p.two {*/
+    /*font-size:x-small;*/
+/*}*/
+/*p.three {*/
+    /*font-size:small;*/
+/*}*/
+/*p.four {*/
+    /*font-size:medium;*/
+/*}*/
+/*p.five {*/
+    /*font-size:large;*/
+/*}*/
+/*p.six {*/
+    /*font-size:x-large;*/
+/*}*/
+/*p.seven {*/
+    /*font-size:xx-large;*/
+/*}*/
+/*==========relative sizes*/
+/*p {*/
+    /*font-size: medium;*/
+/*}*/
+/*strong, em {*/
+    /*font-size:larger;*/
+/*}*/
+/*h1 {*/
+    /*font-size:xx-large;*/
+/*}*/
+/*em {*/
+    /*font-size:larger;*/
+/*}*/
+/*==========percentages and sizes*/
+/*body {*/
+    /*font-size:15px;*/
+/*}*/
+/*p {*/
+    /*font-size:12px;*/
+/*}*/
+/*em {*/
+    /*font-size:120%;*/
+/*}*/
+/*strong {*/
+    /*font-size:135%;*/
+/*}*/
+/*small, .fnote {*/
+    /*font-size:70%;*/
+/*}*/
+/*==========font size and inheritance*/
+/*p {*/
+    /*font-size:12px;*/
+/*}*/
+/*em {*/
+    /*font-size:120%;*/
+/*}*/
+/*strong {*/
+    /*font-size:135%;*/
+/*}*/
+/*==========using length units*/
+/*p.one {*/
+    /*font-size:36pt;*/
+/*}*/
+
+
+/*###################################################styles and variants#############################################*/
+/*==========font with style*/
+/*p {*/
+    /*font-style: italic;*/
+/*}*/
+/*==========font vatiations*/
+/*h1 {*/
+    /*font-variant:small-caps;*/
+/*}*/
+/*h1 code, p {*/
+    /*font-variant:normal;*/
+/*}*/
+
+
+/*####################################################the font property      ########################################*/
+/*h1 {*/
+    /*font:italic 900 small-caps 30px Verdana,Helvetica,Arial,sans-serif;*/
+/*}*/
+/*h2 {*/
+    /*font:bold normal italic 24px Verdana,Helvetica,Arial,sans-serif;*/
+/*}*/
+/*==========adding the line height*/
+/*body {*/
+    /*font-size:12px;*/
+/*}*/
+/*h2 {*/
+    /*font:bold italic 200%/1.2 Verdana,Helvetica,Arial,sans-serif;*/
+/*}*/
+
+/*==========using system fonts*/
+/*button {*/
+    /*font: caption;*/
+/*}*/
+
+/*####################################################font matching          ########################################*/

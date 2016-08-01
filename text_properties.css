@@ -7,21 +7,34 @@
     /*text-indent:-4em;*/
     /*padding-left: 4em;*/
 /*}*/
-div {
-    width:400px;
-}
-p{
-    text-indent:10%;
-}
-/*==========horizontal alignmentt*/
-p {
-    text-align: center;
-}
+/*div {*/
+    /*width:400px;*/
+/*}*/
+/*p{*/
+    /*text-indent:10%;*/
+/*}*/
+/*!*==========horizontal alignmentt*!*/
+/*p {*/
+    /*text-align: center;*/
+/*}*/
 
 
 /*###################################################vertical alignment    ##########################################*/
 /*==========the line height of lines*/
-
+body {
+    line-height:14px;
+    font-size:13px;
+}
+p.cl1 {
+    line-height:1.5em;
+}
+p.cl2 {
+    line-height:150%;
+    font-size:10px;
+}
+p.cl3 {
+    line-height: 0.33in;
+}
 
 
 /*###################################################word spacing and letter spacing#################################*/

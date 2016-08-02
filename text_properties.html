@@ -9,19 +9,54 @@
 
 <!--###################################################identation and horizontal alignment##########################-->
 <!--==========identing text-->
-<div>
-    <p>This paragraph is contained inside a DIV, which is 400px wide, so the first line of the paragraph is indented
-        40px (400 * 10% = 40). This is because percentages are computed with respect to the width of the element.</p>
-</div>
+<!--<div>-->
+<!--<p>This paragraph is contained inside a DIV, which is 400px wide, so the first line of the paragraph is indented-->
+<!--40px (400 * 10% = 40). This is because percentages are computed with respect to the width of the element.</p>-->
+<!--</div>-->
 
 
-<!--################################################font size         ##############################################-->
-<!--==========absolute sizes-->
+<!--################################################vertical alignment##############################################-->
+<!--==========line height-->
+<!--<p>This paragraph inherits a 'line-height' of 14px from the body, as well as a 'font-size' of 13px.</p>-->
+
+<!--<p class="cl1">This paragraph has a 'line-height' of 19.5px(13 * 1.5), so it will have slightly more line-height than-->
+<!--usual.</p>-->
+
+<!--<p class="cl2">This paragraph has a 'line-height' of 15px (10 * 150%), so it will have slightly more line-height than-->
+<!--usual.</p>-->
+
+<!--<p class="cl3">This paragraph has a 'line-height' of 0.33in, so it will have slightly more line-height than usual.</p>-->
+
+<!--==========line height and inheritance-->
+<!--<div>-->
+<!--<p>This paragraph's 'font-size' is 18px, but the inherited 'line-height' value is only 10px. This may cause the-->
+<!--lines of text to overlap each other by a small amount.</p></div>-->
+<!--<div>-->
+<!--<p>This paragraph's 'font-size' is 18px, and since the 'line-height' set for the parent div is 1.5, the-->
+<!--'line-height' for this paragraph is 27px (18 * 1.5).</p></div>-->
+
+<!--==========vertically aligning text-->
+<!--<p>This paragraph contains <span class="raise">superscripted</span> and <span class="lower">subscripted</span> text.</P>-->
+
+<!--<p>This paragraph, as you can see quite clearly, contains a <img src="tall.jpg" alt="tall" class="feeder"/> image and a-->
+<!--<img src="short.jpg" alt="short" class="feeder"/> image, and then some text that is not tall.</p>-->
+
+<!--<p>Here: a <img src="tall.jpg" style="vertical-align: middle;" alt="tall"/> image, and then a <img src="short.jpg"-->
+<!--class="tbot"-->
+<!--alt="short"/> image.-->
+<!--</p>-->
+<p>We can either <sup>soar to new heights</sup> or, instead, <sub>sink into despair...</sub></p>
 
 
-<!--################################################styles and variants      ########################################-->
-<!--==========font vatiations-->
+<!--################################################word spacing and letter spacing########################################-->
+<!--==========word spacing-->
+<p class="spread">The spaces between words in this paragraph will be increased by 0.5em.</p>
 
+<p class="tight">The spaces between words in this paragraph will be decreased by 0.5em.</p>
+
+<p class="base">The spaces between words in this paragraph will be normal.</p>
+
+<p class="norm">The spaces between words in this paragraph will be normal.</p>
 
 <!--#####################################################the font property###########################################-->
 <!--==========adding the line height-->

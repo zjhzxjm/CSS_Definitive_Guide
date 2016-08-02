@@ -21,25 +21,66 @@
 
 /*###################################################vertical alignment    ##########################################*/
 /*==========the line height of lines*/
-body {
-    line-height:14px;
-    font-size:13px;
-}
-p.cl1 {
-    line-height:1.5em;
-}
-p.cl2 {
-    line-height:150%;
-    font-size:10px;
-}
-p.cl3 {
-    line-height: 0.33in;
-}
+/*body {*/
+    /*line-height:14px;*/
+    /*font-size:13px;*/
+/*}*/
+/*p.cl1 {*/
+    /*line-height:1.5em;*/
+/*}*/
+/*p.cl2 {*/
+    /*line-height:150%;*/
+    /*font-size:10px;*/
+/*}*/
+/*p.cl3 {*/
+    /*line-height: 0.33in;*/
+/*}*/
+/*line height and inheritance*/
+/*body {*/
+    /*font-size:10px;*/
+/*}*/
+/*div {*/
+    /*!*line-height:1em;*!*/
+    /*!*line-height:1;  !*solution*!*!*/
+/*}*/
+/*p {*/
+    /*font-size:18px;*/
+/*}*/
 
+/*==========vertically aligning text*/
+/*span.raise {*/
+    /*vertical-align: super;*/
+/*}*/
+/*span.lower {*/
+    /*vertical-align: sub;*/
+/*}*/
+/*.feeder {*/
+    /*vertical-align: bottom; !*top*!*/
+/*}*/
+/*img.tbot {*/
+    /*vertical-align: text-bottom; !*text-top*!*/
+/*}*/
+/*sub {*/
+    /*vertical-align: -20%;*/
+/*}*/
+/*sup {*/
+    /*vertical-align: 20%;*/
+/*}*/
 
 /*###################################################word spacing and letter spacing#################################*/
-/*==========absolute sizes*/
-
+/*==========word spacing*/
+p.spread {
+    word-spacing: 0.5em;
+}
+p.tight {
+    word-spacing:-0.5em;
+}
+p.base {
+    word-spacing:normal;
+}
+p.norm {
+    word-spacing:0;
+}
 
 
 /*###################################################text decoration   #############################################*/

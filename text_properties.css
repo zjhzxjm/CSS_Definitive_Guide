@@ -69,24 +69,101 @@
 
 /*###################################################word spacing and letter spacing#################################*/
 /*==========word spacing*/
-p.spread {
-    word-spacing: 0.5em;
+/*p.spread {*/
+    /*word-spacing: 0.5em;*/
+/*}*/
+/*p.tight {*/
+    /*word-spacing:-0.5em;*/
+/*}*/
+/*p.base {*/
+    /*word-spacing:normal;*/
+/*}*/
+/*p.norm {*/
+    /*word-spacing:0;*/
+/*}*/
+
+/*==========letter spacing*/
+/*p {*/
+    /*letter-spacing:0;*/
+/*}*/
+/*p.spacious {*/
+    /*letter-spacing:0.25em;*/
+/*}*/
+/*p.tight {*/
+    /*letter-spacing:-0.25em;*/
+/*}*/
+/*strong {*/
+    /*letter-spacing:0.2em;*/
+/*}*/
+
+/*==========Spacing and alignment*/
+/*p {*/
+    /*letter-spacing:0.25em;*/
+    /*font-size:20px;*/
+/*}*/
+/*small {*/
+    /*font-size:50%;*/
+    /*letter-spacing:0.25em; !*solution*!*/
+/*}*/
+
+/*###################################################text transformation#############################################*/
+/*h1 {*/
+    /*text-transform: capitalize;*/
+/*}*/
+/*strong {*/
+    /*text-transform: uppercase;*/
+/*}*/
+/*p.cummings {*/
+    /*text-transform: lowercase;*/
+/*}*/
+/*p.raw {*/
+    /*text-transform: none;*/
+/*}*/
+
+/*###################################################text decoration    #############################################*/
+/*p.emph {*/
+    /*text-decoration: underline;*/
+    /*color: blue;*/
+/*}*/
+/*strong {*/
+    /*color: red;*/
+/*}*/
+/*p.topper {*/
+    /*text-decoration: overline;*/
+/*}*/
+/*p.old {*/
+    /*text-decoration: line-through;*/
+/*}*/
+/*p.annoy {*/
+    /*text-decoration: blink;*/
+/*}*/
+/*p.plain {*/
+    /*text-decoration: none;*/
+/*}*/
+/*p.mix {*/
+    /*text-decoration: underline overline;*/
+/*}*/
+
+/*####################################################text shadows           ########################################*/
+/*p.cl1 {*/
+    /*color: black;*/
+    /*text-shadow: silver 2px 2px 2px;*/
+/*}*/
+/*p.cl2 {*/
+    /*color: white;*/
+    /*text-shadow: 0 0 4px black;*/
+/*}*/
+/*p.cl3 {*/
+    /*color: black;*/
+    /*text-shadow: 1em 1em 5px gray, -1em -1em silver;*/
+/*}*/
+
+/*==========Handing whitespace*/
+p.cl1 {
+    white-space:nowrap; /*pre-line normal pre pre-wrap*/
 }
-p.tight {
-    word-spacing:-0.5em;
+
+/*==========text direction*/
+p.cl1 {
+    direction: rtl;
 }
-p.base {
-    word-spacing:normal;
-}
-p.norm {
-    word-spacing:0;
-}
-
-
-/*###################################################text decoration   #############################################*/
-/*==========font with style*/
-
-
-/*####################################################text shadows          ########################################*/
-
-

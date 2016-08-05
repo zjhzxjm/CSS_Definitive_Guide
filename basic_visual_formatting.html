@@ -2,18 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="text_properties.css">
+    <link rel="stylesheet" type="text/css" href="basic_visual_formatting.css">
     <title>Title</title>
 </head>
 <body>
 
-<!--###################################################identation and horizontal alignment##########################-->
-<!--==========identing text-->
+<!--###################################################Basic Boxes                         ##########################-->
 
 
-<!--################################################vertical alignment##############################################-->
-<!--==========line height and inheritance-->
+<!--################################################Block-Level Elements   ##########################################-->
+<!--==========using auto-->
+<p class="one">
+    realbio1
+</p>
 
+<p class="two">
+    realbio2
+</p>
+
+<p class="three">
+    realbio3
+</p>
+
+<!--==========more than auto-->
+<p class="four">
+    realbio4
+</p>
+
+<p class="five">
+    realbio5
+</p>
+<!--==========negative margins-->
+<div>
+    <p class="wide">realbio</p>
+
+    <p class="wide2">realbio</p>
+
+    <!--==========percentages-->
+    <p style="width: 67%;padding-right: 5%;padding-left: 5%;margin-right: auto;margin-left: 5%;">playing percentage</p>
+
+    <p style="width: 67%;padding-right: 2em;padding-left: 2em;margin-right: auto;margin-left: 5em;">mixed lengths</p>
+</div>
+
+<!--==========negative margins-->
+<img src="smile.png" style="display: block;width: 25px;margin: 0;">
+<img src="smile.png" style="display: block;width: 50px;margin: 0;">
+<img src="smile.png" style="display: block;width: 100px;margin: 0;">
+
+<!--==========percentage heights-->
+<div style="height:6em;border: 1px solid">
+    <p style="height: 50%;border: 1px dashed">half as tall</p>
+</div>
+
+<div style="height: auto;">
+    <p style="height: 50%;border: 1px dashed">half as tall</p>
+</div>
+
+<!--==========auto heights-->
+<div style="height: auto; background-color: silver;">
+    <p style="margin-top: 2em; margin-bottom: 2em;">A paragraph</p>
+</div>
+<div style="height: auto; background-color: silver; border:1px solid">
+    <p style="margin-top: 2em; margin-bottom: 2em;">A paragraph</p>
+</div>
+
+<!--==========collapsing vertical margins-->
+<ul>
+    <li>one</li>
+    <li>two</li>
+</ul>
+<h1>h1 title</h1>
 
 <!--################################################word spacing and letter spacing########################################-->
 <!--==========word spacing-->
@@ -23,13 +81,6 @@
 
 
 <!--#####################################################text decoration  ###########################################-->
-
-
-<!--#####################################################text shadow and white spacing hannding#####################-->
-<p class="cl1">keep your          eyes, By default, text is displayed in the capitalization it has in the source document,</p>
-<p class="cl2">I run between the shadow</p>
-<p class="cl3">Slipping through the dark</p>
-
 
 
 </body>

@@ -1,11 +1,79 @@
 /*###################################################Basic Boxes                        #############################*/
 
 
+
 /*###################################################Block-Level Elements  ##########################################*/
-/*==========the line height of lines*/
+/*==========using auto*/
+/*p.one {*/
+    /*margin-left:auto;*/
+    /*margin-right:100px;*/
+    /*width:100px;*/
+    /*border: 1px solid black;*/
+/*}*/
+/*p.two {*/
+    /*margin-left:100px;*/
+    /*margin-right:100px;  !*it will be re evaluate*!*/
+    /*width:100px;*/
+    /*border: 1px solid black;*/
+/*}*/
+/*p.three {*/
+    /*margin-left:100px;*/
+    /*margin-right:100px;*/
+    /*width:auto;  !*it can be omit*!*/
+    /*border: 1px solid black;*/
+/*}*/
 
+/*==========more than one auto*/
+/*p.four {*/
+    /*margin-left:auto;*/
+    /*margin-right:auto;*/
+    /*width:100px;*/
+    /*border: 1px solid black;*/
+/*} !*cantering the element within its parent*!*/
+/*p.five {*/
+    /*margin-left:auto;*/
+    /*margin-right:100px;*/
+    /*width:auto;*/
+    /*border: 1px solid black;*/
+/*}*/
 
-/*==========vertically aligning text*/
+/*==========negative margins and percentages*/
+/*div {*/
+    /*width:400px;*/
+    /*border: 3px solid black;*/
+/*}*/
+/*p.wide {*/
+    /*margin-left:100px;*/
+    /*width:auto;*/
+    /*margin-right:-50px;*/
+    /*border: 1px solid black;*/
+/*}*/
+/*p.wide2 {*/
+    /*margin-left:100px;*/
+    /*width:500px;*/
+    /*margin-right:auto;*/
+    /*border: 1px solid black;*/
+/*}*/
+
+/*==========replaced elements*/
+
+/*==========percentage heights*/
+
+/*==========collapsing vertical margins*/
+ul {
+    margin-bottom:15px;
+    border:1px solid ;
+    background-color: silver;
+}
+li {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+h1 {
+    margin-top:28px;
+}
+
+/*==========*/
 
 
 /*###################################################Inline Elements                #################################*/

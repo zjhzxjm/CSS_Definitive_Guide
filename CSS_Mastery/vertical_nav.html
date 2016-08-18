@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直导航条</title>
+    <style>
+        ul {
+            margin:0px;
+            padding:0px;
+            list-style-type: none;
+        }
+        ul a {
+            display: block;
+            text-decoration: none;
+            width: 200px;
+            height: 39px;
+            line-height: 39px;
+            background:#ffffff url(pixy.gif) no-repeat left bottom;
+            text-indent: 2.5em;
+            color: #000000;
+        }
+        ul a:hover, .selected a {
+            background-position: right bottom;
+            color: #ffffff;
+            cursor: default;
+        }
+        li:first-child a{
+            height: 40px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li class="selected"><a href="#">首页</a></li>
+    <li><a href="#">关于我们</a></li>
+    <li><a href="#">联系我们</a></li>
+</ul>
+</body>
+</html>

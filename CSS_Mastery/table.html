@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据表格</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50em;
+            border: 1px solid #666;
+        }
+        th,td {
+            padding: 0.1em 1em;
+        }
+        caption {
+            font-size:1.2em;
+            font-weight:bold;
+            margin: 1em 0;
+        }
+        col {
+            border-right: 1px solid #ccc;
+        }
+        col#albumCol {
+            border: none;
+        }
+        thead {
+            background: url(mainNavBg.gif) repeat-x left top;
+            border-top:1px solid #a5a5a5;
+            border-bottom:1px solid #a5a5a5;
+
+        }
+        #playlistPostHead {
+            text-indent:-1000px;
+        }
+        tbody tr:nth-child(even) {
+            background-color: cornsilk;
+        }
+        tbody tr:hover {
+            background-color: khaki;
+            color:#fff
+        }
+
+    </style>
+</head>
+<body>
+<table cellspacing="0" id="playlistTable" summary="Top 15 songs played">
+    <caption>Top 15 Playlist</caption>
+    <colgroup>
+        <col id="PlaylistCol"/>
+        <col id="trackCol"/>
+        <col id="artistCol"/>
+        <col id="albumCol"/>
+    </colgroup>
+    <thead>
+        <tr>
+            <th id="playlistPostHead" scope="col">序号</th>
+            <th scope="col">曲名</th>
+            <th scope="col">艺术家</th>
+            <th scope="col">专辑</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>歌曲一</td>
+            <td>艺术家一</td>
+            <td>专辑一</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>歌曲二</td>
+            <td>艺术家二</td>
+            <td>专辑二</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>歌曲三</td>
+            <td>艺术家三</td>
+            <td>专辑三</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

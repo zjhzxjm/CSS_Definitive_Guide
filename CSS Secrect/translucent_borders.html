@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>translucent borders</title>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+        }
+        #wrapper {
+            background: blue;
+            width:700px;
+            height:100px;
+        }
+        #content {
+            background: white;
+            width:400px;
+            position: relative;
+            top:10%;
+            margin:0 auto;
+            border:10px solid hsla(0,0%,100%,.5);
+            /*tells the browser to clip the background at the padding edge*/
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="content">
+        test translucent borders
+    </div>
+</div>
+</body>
+</html>

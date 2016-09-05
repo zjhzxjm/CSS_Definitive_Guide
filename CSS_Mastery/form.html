@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style>
+        fieldset {
+            margin: 1em 0;
+            padding:1em;
+            border:1px solid #ccc;
+            background: #f8f8f8;
+        }
+        legend {
+            font-weight:bold;
+        }
+        input:focus {
+            background: #ffc;
+        }
+        .required {
+            color: red;
+        }
+        p {
+        }
+        .feedback {
+            position: absolute;
+            margin-left: 12em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>联系方式</legend>
+    <p>
+        <label for="author">姓名：</label>
+        <input name="author" id="author" type="text">
+        <strong class="required"> *</strong>
+    </p>
+    <p>
+        <label for="email">邮件：<span class="feedback">非法的邮件地址，请重新输入</span></label>
+        <input name="email" id="email" type="text">
+
+    </p>
+    <p>
+        <label for="url">网址：</label>
+        <input name="url" id="url" type="text">
+    </p>
+</fieldset>
+</body>
+</html>

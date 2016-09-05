@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css coding tips</title>
+    <style>
+        #wraper {
+            width:700px;
+            height:100px;
+            background: white;
+        }
+        /*When values depend on each other, try to reflect their relationship in the code*/
+        button {
+            padding: .3em .8em;
+            border: 1px solid rgba(0,0,0,.5);
+            background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+            font-size: 125%;
+            line-height: 1.5;
+            border-radius: .2em;
+            box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+            text-shadow: 0 -.05em .05em #335166;
+            color: white;
+        }
+        button.cancel {
+            background-color: #c00;
+        }
+        button.ok {
+            background-color: #6b0;
+        }
+        /*new keyword currentColor*/
+        hr {
+            height:.5em;
+            background: currentColor;
+
+        /*inheritance*/
+    </style>
+</head>
+<body>
+<div id="wraper">
+    <button>Yes!</button>
+    <button class="cancel">Cancel</button>
+    <button class="ok">OK<hr></button>
+</div>
+</body>
+</html>

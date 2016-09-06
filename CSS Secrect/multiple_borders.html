@@ -8,20 +8,59 @@
             margin:0px;
             padding:0px;
         }
-        #box {
+        #box1 {
             width:400px;
             height:100px;
             background: yellowgreen;
             margin:0 auto;
             position: relative;
             top:20px;
+            border-radius: 10px;
             box-shadow: 0 0 0 10px #655,0 0 0 15px deeppink,0 2px 5px 15px rgba(0,0,0,.6);
+        }
+        /*outline: dashed second border; outline-offset control distance from the boundaries*/
+        #box2 {
+            width:400px;
+            height:100px;
+            background: yellowgreen;
+            margin: 0 auto;
+            position: relative;
+            top:60px;
+            border:10px solid #655;
+            border-radius: 10px;
+            outline:15px solid deeppink;
+        }
+        #box3 {
+            width: 400px;
+            height:80px;
+            background: yellowgreen;
+            margin: 0 auto;
+            position: relative;
+            top: 90px;
+            border-radius: 5px;
+            outline:2px dashed black;
+            outline-offset: -10px;
+        }
+        p {
+            margin: 0;
+            text-indent: 2em;
+        }
+        #box3 p:first-child {
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
-<div id="box">
-    test
+<div id="box1">
+    <p>box-shadow solution</p>
+</div>
+<div id="box2">
+    <p>outline solution</p>
+    <p>do not have to follow rounding</p>
+</div>
+<div id="box3">
+    <p>outline-offset and dashed border</p>
+    <p>it only works for two "borders"</p>
 </div>
 </body>
 </html>

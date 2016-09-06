@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inner rounding</title>
+    <style>
+        body {
+            margin:0;
+        }
+        p {
+            text-indent:2em;
+        }
+        #box1 {
+            width: 380px;
+            height:80px;
+            margin:0 auto;
+            background: #655;
+            padding: 10px;
+        }
+        #box1 > div {
+            width:360px;
+            height:60px;
+            background: tan;
+            /*background-clip: content-box;*/
+            padding:10px;
+            border-radius: 20px;
+        }
+        #box2 {
+            width: 380px;
+            height:80px;
+            background: tan;
+            position: relative;
+            top: 20px;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 0 0 10px #655;
+            outline:10px solid #655;
+        }
+    </style>
+</head>
+<body>
+<div id="box1">
+    <div>
+        <p>problem:use two element</p>
+    </div>
+</div>
+<div id="box2">
+    <p>one element solution: box-shadow and outline</p>
+</div>
+</body>
+</html>

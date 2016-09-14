@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexible ellipses</title>
+    <style>
+        p {
+            margin: 0;
+            text-indent: 2em;
+        }
+        #box1 {
+            margin: 0 auto;
+            width:200px;
+            height:150px;
+            background: yellowgreen;
+            border-radius: 100px/75px;
+        }
+        #box2 {
+            margin:0 auto;
+            width: 400px;
+            height: 100px;
+            position: relative;
+            top: 10px;
+            background: yellowgreen;
+            border-radius: 50%; /* same to 50% / 50% */
+        }
+    </style>
+</head>
+<body>
+<div id="box1">
+    <p>border-radius curves used to create an ellipse</p>
+</div>
+<div id="box2">
+    <p>it accepts percentages, not just lengths</p>
+</div>
+</body>
+</html>

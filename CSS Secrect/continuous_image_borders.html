@@ -8,11 +8,61 @@
             margin: 0;
             text-indent:2em;
         }
+        #box1 {
+            margin:0 auto;
+            width:400px;
+            height:100px;
+            padding:1em;
+            border: 1em solid transparent;
+            background:
+                    linear-gradient(white, white) padding-box,
+                    repeating-linear-gradient(-45deg,
+                    red 0, red 12.5%,
+                    transparent 0, transparent 25%,
+                    #58a 0, #58a 37.5%,
+                    transparent 0, transparent 50%)
+                    0/5em 5em;
+        }
+        #box2 {
+            margin: 0 auto;
+            width:400px;
+            height:100px;
+            position: relative;
+            top: 10px;
+            padding:1em;
+            border:16px solid transparent;
+            border-image:16 repeating-linear-gradient(-45deg,
+                                red 0, red 1em,
+                                transparent 0, transparent 2em,
+                                #58a 0, #58a 3em,
+                                transparent 0, transparent 4em);
+        }
+        #box3 {
+            margin: 0 auto;
+            width:400px;
+            height:100px;
+            position: relative;
+            top: 20px;
+            padding: 1em;
+            border: 1px solid transparent;
+            background:
+                linear-gradient(white, white) padding-box,
+                repeating-linear-gradient(-45deg,
+                    black 0,black 25%, white 0, white 50%
+                ) 0 / .6em .6em;
+            animation: ants 12s linear infinite;
+        }
     </style>
 </head>
 <body>
 <div id="box1">
-    <p></p>
+    <p>gradient-based patterns</p>
+</div>
+<div id="box2">
+    <p>boable with border-image</p>
+</div>
+<div id="box3">
+    <p>marching ants borders</p>
 </div>
 </body>
 </html>

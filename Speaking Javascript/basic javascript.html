@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Javascript</title>
+    <script>
+        /*Statements Versus Expressions
+        var foo
+        3*7*/
+
+
+        /*variables and assignment
+        Assignment:
+        var foo = 6;
+        foo = 4;
+
+        compound assignment operators
+        x += 1;
+        x = x + 1;
+
+        identifiers and variable names
+        arg0
+        _tmp
+        $elem
+        n*/
+
+
+//        Values: all values in javascript have properties
+//        use(.)operator to read
+        'abc'.length
+//        assign a value to a property
+        var obj = {};
+        obj.foo = 123;
+//        invoke methods
+        'hello'.toUpperCase()
+
+//        primitive values versus objects
+//        each object has unique identity and is only (strictly) equal to itself
+        var obj1 = {}
+        var obj2 = {}
+        obj1 === obj2 //false
+
+//        primitive values
+//        compared by value
+        3 === 3 //true
+//        always immutable
+        var str = 'abc'
+        str.length = 1 //no effect
+
+//        objects
+        {
+            firstname: 'Jane',
+            lastname: 'Doe'
+        }
+//        compared by reference
+//        mutable by default
+
+//        undefined and null
+//        undefined means "no value"
+//        null means "no object"
+
+//        categorizing values using typeof and instanceof
+
+
+        /*Booleans
+        &&(And), ||(Or)
+        !(Not)
+        ===,!==,==,!=
+        >,>=,<,<=*/
+        Boolean({}) // true
+        Boolean([]) //true
+        binary logical operators
+        NaN && 'abc' //NaN
+        123 && 'abc' //'abc'
+        'abc' || 123 //'abc'
+        '' || 123 //123
+
+
+//        Numbers
+//        all numbers in javascript are floating-point
+//        NaN (not a number)
+//        Infinity error value
+
+
+//        Operators
+//        +,-,*,/
+//        remainder: %, Increment: ++variable,variable++, Decrement: --variable,variable--, Negate:-value
+//        convert to number:+value
+
+
+//        Strings
+        var str = 'abc'
+        str[1]
+
+//        string operators (+, +=)
+        var messageCount = 3
+        'You have' + messageCount + 'messages'
+
+//        strinf methods
+        'abc'.slice(1)
+        'abc'.slice(1,2)
+        '\t xyz  '.trim()
+        'abc'.toUpperCase()
+        'abc'.indexOf('b')
+        'abc'.indexOf('x')
+
+
+//        Statements
+//        conditionals
+        if(myvar === 0) {
+            //then
+        } else if (myvar === 1) {
+            //else if
+        } else {
+            //else
+        }
+
+        if (x<0) return x;
+
+        switch (fruit) {
+            case 'banana':
+                //...
+                break;
+            case 'apple':
+                //...
+                break;
+            default:
+                //...
+        }
+
+//        loops
+        for (var i=0;i<5;i++) {
+            console.log(i);
+        }
+
+//        do {
+//
+//        } while (condition);
+
+
+
+
+        //        Closures
+        function createIncrementor(start) {
+            return function () {
+                start++;
+                return start
+            }
+        }
+
+
+        //        not use The IIFE Pattern, not what I want
+        //        var result = [];
+        //        for (var i=0; i<5; i++) {
+        //            result.push(function(){return i});
+        //        }
+        //        console.log(result[1]())
+        //        console.log(result[2]())
+        //        IIFE use case: inadvertatnt sharing via closures
+        var result = [];
+        for (var i = 0; i < 5; i++) {
+            (function () {
+                var i2=i;
+                result.push(function () {
+                    return i2;
+                })
+            }());
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

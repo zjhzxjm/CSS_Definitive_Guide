@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>parallelograms</title>
+    <style>
+        .button {
+            display: inline-block;
+            transform: skewX(-45deg);
+            width:80px;
+            height:18px;
+            border: 1px solid blue;
+            background: blue;
+            color: white;
+            text-decoration: none;
+        }
+        .button > div {
+            transform: skewX(45deg);
+        }
+
+        .button1 {
+            display: inline-block;
+            position: relative;
+            width:80px;
+            height:18px;
+            color: white;
+            text-decoration: none;
+        }
+        .button1::before {
+            content: '';
+            position:absolute;
+            top: 0; right:0; bottom:0; left:0;
+            background: #58a;
+            z-index: -1;
+            transform: skew(-45deg);
+        }
+
+    </style>
+</head>
+<body>
+<!--Nested elements solution-->
+<a href="" class="button">
+    <div>Click me</div>
+</a>
+<!--Pseudo-element solution-->
+<a href="" class="button1">
+    <div>Click me</div>
+</a>
+</body>
+</html>

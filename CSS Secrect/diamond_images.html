@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diamond images</title>
+    <style>
+        .picture {
+            margin:0 auto;
+            position: relative;
+            top: 100px;
+            width: 400px;
+            transform: rotate(45deg);
+            overflow: hidden;
+        }
+        .picture > img {
+            max-width:100%;
+            transform: rotate(-45deg) scale(1.42);
+        }
+
+        .picture1 {
+            margin: 0 auto;
+            position: relative;
+            top: 200px;
+            width: 400px;
+        }
+        .picture1 > img {
+            max-width: 400px;
+            clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+            -webkit-clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);
+            transition: 1s;
+        }
+        .picture1 > img:hover {
+            clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+            -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        }
+    </style>
+</head>
+<body>
+<!--transform-based solution-->
+<div class="picture">
+    <img src="adamcatlace.jpg"/>
+</div>
+<!--Clipping path solution-->
+<div class="picture1">
+    <img src="adam-sleeping.jpg"/>
+</div>
+</body>
+</html>

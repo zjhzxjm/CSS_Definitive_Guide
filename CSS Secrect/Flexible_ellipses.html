@@ -24,6 +24,25 @@
             background: yellowgreen;
             border-radius: 50%; /* same to 50% / 50% */
         }
+        #box3 {
+            margin:0 auto;
+            width: 400px;
+            height: 100px;
+            position: relative;
+            top: 20px;
+            background: yellowgreen;
+            /*border-radius: 50% / 100% 100% 0 0;*/
+            border-radius: 100% 0 0 100% / 50%;
+        }
+        #box4 {
+            margin:0 auto;
+            width:400px;
+            height:100px;
+            position: relative;
+            top: 30px;
+            background: yellowgreen;
+            border-radius: 100% 0 0 0;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +51,12 @@
 </div>
 <div id="box2">
     <p>it accepts percentages, not just lengths</p>
+</div>
+<div id="box3">
+    <p>flexible half ellipse</p>
+</div>
+<div id="box4">
+    <p>quarter ellipses</p>
 </div>
 </body>
 </html>

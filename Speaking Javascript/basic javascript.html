@@ -5,140 +5,145 @@
     <title>Basic Javascript</title>
     <script>
         /*Statements Versus Expressions
-        var foo
-        3*7*/
+         var foo
+         3*7*/
 
 
-        /*variables and assignment
-        Assignment:
-        var foo = 6;
-        foo = 4;
+        /*==============variables and assignment
+         Assignment:
+         var foo = 6;
+         foo = 4;
 
-        compound assignment operators
-        x += 1;
-        x = x + 1;
+         compound assignment operators
+         x += 1;
+         x = x + 1;
 
-        identifiers and variable names
-        arg0
-        _tmp
-        $elem
-        n*/
+         identifiers and variable names
+         arg0
+         _tmp
+         $elem
+         n*/
 
 
-//        Values: all values in javascript have properties
-//        use(.)operator to read
+        //==============Values: all values in javascript have properties
+        //        use(.)operator to read
         'abc'.length
-//        assign a value to a property
+        //        assign a value to a property
         var obj = {};
         obj.foo = 123;
-//        invoke methods
+        //        invoke methods
         'hello'.toUpperCase()
 
-//        primitive values versus objects
-//        each object has unique identity and is only (strictly) equal to itself
+        //        primitive values versus objects
+        //        each object has unique identity and is only (strictly) equal to itself
         var obj1 = {}
         var obj2 = {}
         obj1 === obj2 //false
 
-//        primitive values
-//        compared by value
+        //        primitive values
+        //        compared by value
         3 === 3 //true
-//        always immutable
+        //        always immutable
         var str = 'abc'
         str.length = 1 //no effect
 
-//        objects
-        {
-            firstname: 'Jane',
-            lastname: 'Doe'
-        }
-//        compared by reference
-//        mutable by default
+        //        objects
+        //        {
+        //            firstname: 'Jane',
+        //            lastname: 'Doe'
+        //        }
+        //        compared by reference
+        //        mutable by default
 
-//        undefined and null
-//        undefined means "no value"
-//        null means "no object"
+        //        undefined and null
+        //        undefined means "no value"
+        //        null means "no object"
 
-//        categorizing values using typeof and instanceof
-
-
-        /*Booleans
-        &&(And), ||(Or)
-        !(Not)
-        ===,!==,==,!=
-        >,>=,<,<=*/
-        Boolean({}) // true
-        Boolean([]) //true
-        binary logical operators
-        NaN && 'abc' //NaN
-        123 && 'abc' //'abc'
-        'abc' || 123 //'abc'
-        '' || 123 //123
+        //        categorizing values using typeof and instanceof
 
 
-//        Numbers
-//        all numbers in javascript are floating-point
-//        NaN (not a number)
-//        Infinity error value
+        /*==============Booleans
+         &&(And), ||(Or)
+         !(Not)
+         ===,!==,==,!=
+         >,>=,<,<=*/
+        //        Boolean({}) // true
+        //        Boolean([]) //true
+        //        binary
+        //        logical
+        //        operators
+        //        NaN && 'abc' //NaN
+        //        123 && 'abc' //'abc'
+        //        'abc' || 123 //'abc'
+        //        '' || 123 //123
 
 
-//        Operators
-//        +,-,*,/
-//        remainder: %, Increment: ++variable,variable++, Decrement: --variable,variable--, Negate:-value
-//        convert to number:+value
+        //==============Numbers
+        //        all numbers in javascript are floating-point
+        //        NaN (not a number)
+        //        Infinity error value
 
 
-//        Strings
+        //==============Operators
+        //        +,-,*,/
+        //        remainder: %, Increment: ++variable,variable++, Decrement: --variable,variable--, Negate:-value
+        //        convert to number:+value
+
+
+        //==============Strings
         var str = 'abc'
         str[1]
 
-//        string operators (+, +=)
+        //        string operators (+, +=)
         var messageCount = 3
         'You have' + messageCount + 'messages'
 
-//        strinf methods
+        //        strinf methods
         'abc'.slice(1)
-        'abc'.slice(1,2)
+        'abc'.slice(1, 2)
         '\t xyz  '.trim()
         'abc'.toUpperCase()
         'abc'.indexOf('b')
         'abc'.indexOf('x')
 
 
-//        Statements
-//        conditionals
-        if(myvar === 0) {
-            //then
-        } else if (myvar === 1) {
-            //else if
-        } else {
-            //else
-        }
+        //==============Statements
+        //        conditionals
+        //        if (myvar === 0) {
+        //            //then
+        //        } else if (myvar === 1) {
+        //            //else if
+        //        } else {
+        //            //else
+        //        }
 
-        if (x<0) return x;
+        //        if (x < 0) return x;
 
-        switch (fruit) {
-            case 'banana':
-                //...
-                break;
-            case 'apple':
-                //...
-                break;
-            default:
-                //...
-        }
+        //        switch (fruit) {
+        //            case 'banana':
+        //                //...
+        //                break;
+        //            case 'apple':
+        //                //...
+        //                break;
+        //            default:
+        //            //...
+        //        }
 
-//        loops
-        for (var i=0;i<5;i++) {
+        //        loops
+        for (var i = 0; i < 5; i++) {
             console.log(i);
         }
 
-//        do {
-//
-//        } while (condition);
+        //        do {
+        //
+        //        } while (condition);
 
 
+        //==============Functions
 
+        //        Variable scoping and closures
+        //        variables are function-scoped
 
         //        Closures
         function createIncrementor(start) {
@@ -160,7 +165,7 @@
         var result = [];
         for (var i = 0; i < 5; i++) {
             (function () {
-                var i2=i;
+                var i2 = i;
                 result.push(function () {
                     return i2;
                 })
@@ -168,6 +173,66 @@
         }
 
 
+        //==============Objects and Constructors
+        //        Single Objects 'in operator and delete operator'
+        var jane = {
+            name: 'Jane',
+            describe: function () {
+                return 'Person named ' + this.name;
+            }
+        }
+
+        //        arbitrary property keys
+
+        //        Functions Inside a Method: every function has its own special variable this
+        var jane2 = {
+            name: 'Jane',
+            friends: ['Tarzan', 'Cheeta'],
+            logHiToFriends: function () {
+                this.friends.forEach(function (friend) {
+                    console.log(this.name + ' say hi to ' + friend);
+                }, this);
+            }
+        }
+
+        //Constructors: Factories for Objects
+        //Set up instance data
+        function Point(x,y) {
+            this.x = x;
+            this.y = y;
+        }
+        //Methods
+        Point.prototype.dist = function () {
+            return Math.sqrt(this.x*this.x + this.y*this.y);
+        };
+        //Use Point
+        var p = new Point(3,5)
+
+
+        //==============Arrays
+        var arr = ['a', 'b', 'c']
+        //Iterating over Arrays
+        arr.forEach(
+                function (elem, inde) {
+                    console.log(inde + ' . ' + elem);
+                }
+        )
+
+
+        //==============Regular Expressions
+        //test() is there a match
+        //  /^a+b+$/.test('aaab') return: true
+        //exec() match and capture groups
+        //  /a(b+)a.exec('__abbba_aba_') return: ['abbba', 'bbb']
+
+
+        //==============Math
+        Math.abs(-2);
+        Math.pow(3,2)
+        Math.max(2,-1,5)
+        Math.round(1.9)
+        Math.PI
+        Math.cos(Math.PI)
 
     </script>
 </head>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple pie charts</title>
+    <style>
+        #pie1 {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, transparent 50%, #655 0);
+        }
+        #pie2 {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 40px;
+            background: yellowgreen;
+            border-radius: 50%;
+            /*overflow: hidden;*/
+            background-image: linear-gradient(to right, transparent 50%, #655 0);
+        }
+        #pie2::before {
+            content: "";
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: inherit;
+            transform-origin: left;
+            transform: rotate(.1turn);
+        }
+        #pie3 {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 80px;
+            background: yellowgreen;
+            border-radius: 50%;
+            /*overflow: hidden;*/
+            background-image: linear-gradient(to right, transparent 50%, #655 0);
+        }
+        #pie3::before {
+            content: "";
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: #655;
+            transform-origin: left;
+            transform: rotate(.1turn);
+        }
+        #pie4 {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 120px;
+            background: yellowgreen;
+            border-radius: 50%;
+            /*overflow: hidden;*/
+            background-image: linear-gradient(to right, transparent 50%, #655 0);
+            color: #655;
+        }
+        #pie4::before {
+            content: "";
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: inherit;
+            transform-origin: left;
+            animation: spin 3s linear infinite, bg 6s step-end infinite;
+        }
+        @keyframes spin {
+            to {transform: rotate(.5turn);}
+        }
+        @keyframes bg {
+            50% {background: currentColor;}
+        }
+    </style>
+</head>
+<body>
+<div id="pie1">
+    <p>Coloring the right part of our circle brown, with a simple linear gradient</p>
+</div>
+<div id="pie2">
+    <p>0-50%</p>
+</div>
+<div id="pie3">
+    <p>50%-100%</p>
+</div>
+<div id="pie4">
+    <p>animated</p>
+</div>
+</body>
+</html>

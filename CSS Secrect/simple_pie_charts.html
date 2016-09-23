@@ -12,6 +12,7 @@
             border-radius: 50%;
             background-image: linear-gradient(to right, transparent 50%, #655 0);
         }
+
         #pie2 {
             margin: 0 auto;
             width: 100px;
@@ -33,6 +34,7 @@
             transform-origin: left;
             transform: rotate(.1turn);
         }
+
         #pie3 {
             margin: 0 auto;
             width: 100px;
@@ -54,6 +56,7 @@
             transform-origin: left;
             transform: rotate(.1turn);
         }
+
         #pie4 {
             margin: 0 auto;
             width: 100px;
@@ -82,6 +85,59 @@
         @keyframes bg {
             50% {background: currentColor;}
         }
+
+        #pie5 {
+            margin: 0 auto;
+            width: 100px;
+            position: relative;
+            top: 160px;
+        }
+        #pie5 circle {
+            fill: yellowgreen;
+            stroke: #655;
+            stroke-width: 50;
+            stroke-dasharray: 20 158;
+        }
+
+        #pie6 {
+            margin:0 auto;
+            width:100px;
+            position: relative;
+            top: 200px;
+        }
+        #pie6 > svg {
+            transform: rotate(-90deg);
+            background: yellowgreen;
+            border-radius: 50%;
+        }
+        #pie6 circle {
+            fill: yellowgreen;
+            stroke: #655;
+            stroke-width: 50;
+            stroke-dasharray: 60 158;
+        }
+
+        #pie7 {
+            margin: 0 auto;
+            width: 100px;
+            position: relative;
+            top: 240px;
+        }
+        #pie7 circle {
+            fill: yellowgreen;
+            stroke: #655;
+            stroke-width: 50;
+            stroke-dasharray: 0 158;
+            animation: fillup 5s linear infinite;
+        }
+        #pie7 > svg {
+            transform: rotate(-90deg);
+            background: yellowgreen;
+            border-radius: 50%;
+        }
+        @keyframes fillup {
+            to {stroke-dasharray: 158 158;}
+        }
     </style>
 </head>
 <body>
@@ -96,6 +152,23 @@
 </div>
 <div id="pie4">
     <p>animated</p>
+</div>
+<div id="pie5">
+    <svg width="100" height="100">
+        <circle r="25" cx="50" cy="50"/>
+    </svg>
+    <p>SVG solution</p>
+</div>
+<div id="pie6">
+    <svg width="100" height="100">
+        <circle r="25" cx="50" cy="50"/>
+    </svg>
+    <p>SVG pie chart</p>
+</div>
+<div id="pie7">
+    <svg width="100px" height="100px">
+        <circle r="25" cx="50" cy="50"/>
+    </svg>
 </div>
 </body>
 </html>

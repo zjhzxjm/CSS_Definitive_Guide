@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>one-sided shadows</title>
     <style>
+        p {
+            margin: 0;
+        }
         #box1 {
             margin: 0 auto;
             width: 400px;
@@ -12,11 +15,36 @@
             background: orange;
             box-shadow: 0 5px 4px -4px black;
         }
+        #box2 {
+            margin: 0 auto;
+            width:400px;
+            height:100px;
+            position: relative;
+            top: 10px;
+            background: orange;
+            box-shadow: 3px 3px 6px -3px black;
+        }
+        #box3 {
+            margin: 0 auto;
+            width: 400px;
+            height: 100px;
+            position: relative;
+            top: 20px;
+            background: orange;
+            box-shadow: 5px 0 5px -5px black,
+                         -5px 0 5px -5px black;
+        }
     </style>
 </head>
 <body>
 <div id="box1">
-
+    <p>shadow-one-side</p>
+</div>
+<div id="box2">
+    <p>shadow-2-sides</p>
+</div>
+<div id="box3">
+    <p>shadow-opppsite-sides</p>
 </div>
 </body>
 </html>

@@ -8,6 +8,13 @@
             margin:0;
             padding: 0;
         }
+        #problem {
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            background: white;
+            position: relative;
+            margin: 0 auto;
+            width: 400px;
+        }
         #wrapper {
             background: blue;
             width:700px;
@@ -19,7 +26,7 @@
             position: relative;
             top:10%;
             margin:0 auto;
-            border:10px solid hsla(0,0%,100%,.5);
+            border:10px solid hsla(0,100%,100%,.5);
             /*tells the browser to clip the background at the padding edge*/
             background-clip: padding-box;
         }
@@ -27,6 +34,9 @@
 </head>
 <body>
 <div id="wrapper">
+    <div id="problem">
+        Our initial attempt to achieve semi-transparent borders
+    </div>
     <div id="content">
         test translucent borders
     </div>

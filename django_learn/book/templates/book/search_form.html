@@ -1,0 +1,29 @@
+{% load book_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+{% if errors %}
+    <ul>
+        {% for error in errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% do_current_time "%Y-%m-%d %I:%M %p" as my_current_time %}
+{{ my_current_time }}
+<form action="" method="get">
+    <input type="text" name="q">
+    <input type="submit" value="Search">
+</form>
+{% upper %}
+    dsad
+    {% current_time "%Y-%m-%d %I:%M %p" %}
+    <p>sa</p>
+{% endupper %}
+</body>
+</html>
